@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'recommendation_ms.apps.RecommendationMsConfig'
+   'recommendation_ms.apps.RecommendationMsConfig'
 ]
 
 MIDDLEWARE = [
