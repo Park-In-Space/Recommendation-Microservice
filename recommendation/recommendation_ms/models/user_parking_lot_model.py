@@ -8,6 +8,7 @@ class User_Parking_lot(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     parking_lot = models.ForeignKey(Parking_lot, on_delete=models.CASCADE)
     recommended = models.BooleanField()
+    distance_to_destination = models.PositiveIntegerField(default=0)
     
 
     class Meta:

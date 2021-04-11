@@ -4,8 +4,7 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 class Parking_lot(models.Model):
 
-    id = models.AutoField(primary_key=True)
-    name = models.CharField(max_length=20)
+    id = models.PositiveIntegerField(primary_key=True)
     rating = models.PositiveIntegerField(
         default = 0,
         validators = [
