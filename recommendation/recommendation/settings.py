@@ -25,7 +25,7 @@ SECRET_KEY = 'e&kzo#z+6%$hibff(s2d4#-+nm9@t%*v%=2$2(69p&ad7bgu4u'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','3.89.56.78']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','54.82.198.77']
 
 
 # Application definition
@@ -81,9 +81,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'recommendation_db',
-        'USER': 'root',
-        'PASSWORD': 'Password1!',
-        'HOST': 'db',
+        'USER': 'admin',
+        'PASSWORD': 'parkinspace',
+        'HOST': 'ps-review-ms.cwqt7dh9rz9y.us-east-2.rds.amazonaws.com',
         'PORT': '3306',
     }
 }
