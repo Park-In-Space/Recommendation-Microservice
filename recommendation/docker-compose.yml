@@ -5,23 +5,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
+    ports:n
       - 8000:8000
     volumes: 
       - .:/app
-    depends_on: 
-      - db
+    
 
-  db:
-    image: mysql:8.0.23
-    command: mysqld --default-authentication-plugin=mysql_native_password
-    restart: always
-    environment: 
-      MYSQL_DATABASE: recommendation_db
-      MYSQL_USER: root
-      MYSQL_PASSWORD: Password1!
-      MYSQL_ROOT_PASSWORD: Password1!
-    volumes: 
-      - .dbdata:/var/lib/mysql
-    ports: 
-      - 33066:3306
+  
